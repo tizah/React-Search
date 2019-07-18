@@ -6,7 +6,12 @@ export default class Search extends Component {
     return (
       <form>
         {children}
-        <input type="text" value={value} onChange={onChange} />
+        <input
+          type="text"
+          value={value}
+          onChange={onChange}
+          placeholder="search"
+        />
       </form>
     );
   }
